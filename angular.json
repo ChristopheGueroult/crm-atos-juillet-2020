@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "crm-atos-juillet"
+    }
+  },
+  "defaultProject": "crm-atos-juillet",
+  "cli": {
+    "analytics": "eeee380e-8d3e-497b-a1d2-44dcfa63db0e"
+  }
 }
