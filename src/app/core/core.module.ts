@@ -5,6 +5,7 @@ import { TextModule } from '../text/text.module';
 import { IconsModule } from '../icons/icons.module';
 import { UiModule } from '../ui/ui.module';
 import { TemplatesModule } from '../templates/templates.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -18,7 +19,8 @@ import { TemplatesModule } from '../templates/templates.module';
     TextModule,
     IconsModule,
     UiModule,
-    TemplatesModule
+    TemplatesModule,
+    NgbModule,
   ]
 })
 export class CoreModule { }
