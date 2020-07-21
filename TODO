@@ -2,10 +2,10 @@
 ✔ TextModule et encapsulation @done(20-07-21 09:56)
 ✔ life cycles @done(20-07-21 11:27)
 ✔ components intelligents vs components stupides @done(20-07-21 11:27)
-☐ router config
-☐ lazy loading
-☐ modules routing
-☐ enable tracing
-☐ router events
-☐ 
+✔ router config @done(20-07-21 13:06)
+✔ lazy loading @done(20-07-21 13:06)
+✔ modules routing @done(20-07-21 14:31)
+✔ enable tracing @done(20-07-21 14:31)
+✔ router events @done(20-07-21 14:31)
+☐
 
