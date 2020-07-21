@@ -1,4 +1,11 @@
-☐ transclusions multiples
-☐ life cycles
-☐ components intelligents vs components stupides
+✔ transclusions multiples @done(20-07-21 09:56)
+✔ TextModule et encapsulation @done(20-07-21 09:56)
+✔ life cycles @done(20-07-21 11:27)
+✔ components intelligents vs components stupides @done(20-07-21 11:27)
+☐ router config
+☐ lazy loading
+☐ modules routing
+☐ enable tracing
+☐ router events
+☐ 
 

@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TextPagesComponent } from './components/text-pages/text-pages.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [TextPagesComponent],
+  exports: [TextPagesComponent],
   imports: [
     CommonModule
   ]
