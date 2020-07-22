@@ -5,14 +5,15 @@
   </app-text-bandeau>
 
   <ng-container class="contents">
+    <!-- {{ collection | json }} -->
     <app-table-light *ngIf="collection" [headers]="headers">
       <tr *ngFor="let item of collection">
         <td>{{ item.typePresta }}</td>
         <td>{{ item.client }}</td>
         <td>{{ item.nbJours }}</td>
-        <td>{{ item.tjmHt }}</td>
-        <td>total ht</td>
-        <td>total ttc</td>
+        <td>{{ item.tjmHt | currency: 'EUR' }}</td>
+        <td>{{ item.tjmHt | total: item.nbJours | currency: 'EUR' }}</td>
+        <td>{{ item.tjmHt | total: item.nbJours: item.tva | currency: 'EUR' }}</td>
         <td>{{ item.state }}</td>
       </tr>
     </app-table-light>
