@@ -4,3 +4,7 @@
   padding: 2rem 1rem;
   background: $color1;
 }
+
+:host-context(.theme2) .bandeau {
+  background: $color2;
+}

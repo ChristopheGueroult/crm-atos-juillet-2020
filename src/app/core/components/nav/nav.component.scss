@@ -3,3 +3,7 @@
 .active {
   color: $color1;
 }
+
+:host-context(.theme2) .active {
+  color: $color2;
+}
