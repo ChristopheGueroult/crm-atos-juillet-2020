@@ -40,4 +40,8 @@ export class PageOrdersComponent implements OnInit {
     });
   }
 
+  public popup() {
+    console.log('open popup');
+  }
+
 }
