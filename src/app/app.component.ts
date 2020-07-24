@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ThemeService } from './core/services/theme.service';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'crm-atos-juillet';
+  theme: string;
+  constructor(private ts: ThemeService) {
+    this.ts.theme$.subscribe((data) => {
+      this.theme = data;
+    });
+  }
 }

@@ -12,6 +12,30 @@
 ✔ pipe perso @done(20-07-23 08:51)
 ✔ pipe async @done(20-07-23 08:51)
 ✔ directive perso @done(20-07-23 08:51)
+✔ TP page clients @done(20-07-23 15:58)
+  ✔ créer un enum (db.json) ACTIVE INACTIVE @done(20-07-23 15:58)
+  ✔ créer une interface ClientI (db.json) @done(20-07-23 15:58)
+  ✔ model Client avec comme valeur par défaut la tva à 20 et le state à StateClient.ACTIVE @done(20-07-23 15:58)
+  ✔ créer ClientsService en prenant exemple sur OrdersService @done(20-07-23 15:58)
+  ✔ compléter PageClientsComponent.ts et .html en prenant exemple sur PageOrdersComponent @done(20-07-23 15:58)
+  ✔ pour le html utiliser template-one-col, table-dark ou table-light, app-text-bandeau, le meme directive appState, créez un Pipe qui return le total ttc à partir de totalCaHt. Pour les colones du tableau [name, total ht, tva, total ttc, state] @done(20-07-23 15:58)
+
+☐ TP theme 2
+  ☐ créer un service dans core/ ThemeService
+  ☐ sur ce service, une variable theme$: Subject<string> = new Subject()
+  ☐ sur ce service une fonction qui récupère un param string et qui modifie le flux de donnée : this.theme$.next(param)
+  ☐ dans header component ts
+    ☐ injection de ThemeService (private ts: ThemeService)
+    ☐ créer fonction changeTheme(event) qui appel this.ts.changeTheme(event.target.value)
+    ☐ dans le html ajouter un select avec 2 option pour value theme1 et value theme2
+    ☐ sur le select ajouter un (change)="changeTheme($event)"
+  ☐ dans app component ts
+    ☐ injecter ThemeService (private ts: ThemeService)
+    ☐ créer une variable theme: string;
+    ☐ souscrire à this.ts.theme$ pour affecter la valeur du subscribe à la variable theme
+    ☐ dans le html sur la balise <app-ui> ajouter une [ngClass]="{'theme2': theme === 'theme2'}"
+
+☐ pipe async
 
 composants angular :
 

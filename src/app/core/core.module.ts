@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -18,7 +19,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     TextModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ],
   exports: [
     LoginModule,
