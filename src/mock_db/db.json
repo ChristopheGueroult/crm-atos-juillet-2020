@@ -2,10 +2,10 @@
   "orders": [
     {
       "tjmHt": 700,
-      "nbJours": 5,
+      "nbJours": 10,
       "tva": 20,
       "state": "OPTION",
-      "typePresta": "Formation2",
+      "typePresta": "Formation",
       "client": "Atos",
       "comment": "Comment pour Atos",
       "id": 4

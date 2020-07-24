@@ -65,3 +65,21 @@ life cycles :
 router events :
 
 
+☐ tp edit order
+  ☐ orders component ts ajouter dans headers[] le nom de la colone action
+  ☐ orders component html ajouter un td avec icon edit
+  ☐ au click sur l'icon edit on appel une fontion edit(item)
+  ☐ dans le ts on créé la fonction edit(item) qui redirige vers la route orders/edit/1
+  ☐ créer le component page-edit
+  ☐ dans orders routing module : créer une route edit/:id (qui prend un id dans l'url)
+  ☐ sur page edit component.ts :
+    ☐ récupérer l'id dans l'url
+    ☐ appeler la méthode getItemById(id) de ordersService
+    ☐ faire le subscribe pour récupérer dans le subscribe l'item qui est retourné par l'api
+    ☐ dans page edit component html
+      ☐ utilise un template component
+      ☐ utilise form order component
+      ☐ on bing l'item récupéré avec FormOrderComponent.initItem (@Input())
+    ☐ dans page edit component html utiliser l'@Output() clickek que l'on bing avec une fonction edit($event)
+    ☐ dans page edit component ts on crée la fonction edit(item: Order) et qui utilise this.os.update(item).subscribe()
+    ☐ dans le subscribe() on récupère la réponse de l'api et on fait une redirection vers la route 'orders

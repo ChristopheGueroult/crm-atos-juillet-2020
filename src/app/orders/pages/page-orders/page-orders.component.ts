@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { OrdersService } from '../../services/orders.service';
 import { Order } from 'src/app/shared/models/order';
 import { StateOrder } from 'src/app/shared/enums/state-order.enum';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-orders',
@@ -12,7 +13,10 @@ export class PageOrdersComponent implements OnInit {
   public collection: Order[];
   public headers: string[];
   public states = Object.values(StateOrder);
-  constructor(private os: OrdersService) { }
+  constructor(
+    private os: OrdersService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.os.collection.subscribe(
@@ -23,6 +27,7 @@ export class PageOrdersComponent implements OnInit {
     );
     // console.log(this.collection);
     this.headers = [
+      'Action',
       'Type',
       'Client',
       'NbJours',
@@ -44,4 +49,7 @@ export class PageOrdersComponent implements OnInit {
     console.log('open popup');
   }
 
+  public goToEdit(item: Order) {
+    this.router.navigate(['orders', 'edit', item.id]);
+  }
 }
