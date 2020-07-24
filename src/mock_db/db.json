@@ -1,26 +1,6 @@
 {
   "orders": [
     {
-      "tjmHt": 700,
-      "nbJours": 10,
-      "tva": 20,
-      "state": "OPTION",
-      "typePresta": "Formation",
-      "client": "Atos",
-      "comment": "Comment pour Atos",
-      "id": 4
-    },
-    {
-      "tjmHt": 1200,
-      "nbJours": 2,
-      "tva": 20,
-      "state": "OPTION",
-      "typePresta": "formation",
-      "client": "Cnam",
-      "comment": "Merci beaucoup",
-      "id": 5
-    },
-    {
       "tjmHt": 5000,
       "nbJours": 4,
       "tva": 20,

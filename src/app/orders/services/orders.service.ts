@@ -44,6 +44,9 @@ export class OrdersService {
   }
 
   // delete item in collection
+  public delete(item: Order): Observable<Order> {
+    return this.http.delete<Order>(`${environment.urlApi}/orders/${item.id}`);
+  }
 
   // get item by id in collection
   public getItemById(id: string): Observable<Order> {
